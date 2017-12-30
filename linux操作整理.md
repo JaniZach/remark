@@ -79,7 +79,7 @@ linux文件或程序查找
 
 	(1)关闭防火墙：service iptables stop 
 	(2)编辑防火墙文件：vi /etc/sysconfig/iptables
-	(3)开放权限：
+	(3)开放权限(以开放22端口为例)：
 		iptables -A INTPUT -p tcp --sport 22 -j ACCEPT
 		iptables -A OUTPUT -p tcp --sport 22 -j ACCEPT
 	(4)防火墙重启：service iptables restart
