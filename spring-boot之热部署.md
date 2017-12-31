@@ -16,3 +16,16 @@
 
 	热部署：多在生产环境使用；
 	热加载：多在开发环境使用；
+
+## 8.idea开发工具下使用spring-boot-tools的注意事项 ##
+
+	
+### 原因： ###
+
+	eclipse设置自动编译后，修改了类会自动编译。而idea并没有设置自动编译。
+
+### 解决办法： ###
+
+	1.idea打开设置，在compiler下，选择 Make project automatically[有的版本是build project automatically];
+	2.打开项目，ctrl+alt+shift+/,选择registry，勾选compiler.automake.allow.when.app.running
+	3.重启应用，sping-boot-devtools即可生效。
